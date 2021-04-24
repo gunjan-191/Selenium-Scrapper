@@ -18,10 +18,10 @@ def Harvey(url):
 
 	driver.implicitly_wait(10) # seconds
 
-	#click Show all
-	driver.find_element_by_xpath('//*[@id="BVRRContainer"]/div/div/div/div/div[1]/div[3]/div/div[2]/div[2]/div/div/div[1]/div/div[2]/div/div/div/p/a').click()
+# 	#click Show all
+# 	driver.find_element_by_xpath('//*[@id="BVRRContainer"]/div/div/div/div/div[1]/div[3]/div/div[2]/div[2]/div/div/div[1]/div/div[2]/div/div/div/p/a').click()
 
-	review = driver.find_element_by_xpath('//*[@id="bv-mbox-lightbox-list"]/div[2]/div/div/div/ol/div/li/div[2]/div[1]/div/div[1]/div/div[2]/h3').text
+	review =driver.find_element_by_xpath('//*[@id="BVRRContainer"]/div/div/div/div/ol/li[1]/div[2]/div[1]/div/div[1]/div/div[2]/h3').text
 	print(review)
 
 	driver.close()
